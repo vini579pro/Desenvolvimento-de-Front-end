@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Organização da página */
+
+.layout-pagina {
+    display: grid;
+
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"
+    ;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto ;
+
+    min-height: 100%;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    grid-area: header;
+
+    background-color: #173f6d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 0 0 10px;
+}
+
+.cabecalho p {
+    margin: 0;
+}
+
+/* Menu da lateral Esquerdo */
+
+.barra-lateral {
+    grid-area: sidebar;
+
+    background-color: #dbeafe;
+    padding: 20px;
+}
+
+.barra-lateral h2 {
+    color: #173f6d;
+}
+
+.barra-lateral ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-lateral li {
+    margin-bottom: 10px;
+}
+
+.barra-lateral a{
+    display: block;
+    background-color: #3178c6;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.barra-lateral a:hover {
+    background-color: #173f6d;
+}
+
+/* Grid dos cards */
+
+.grid-principal {
+    grid-area: main;
+    padding: 30px;
+}
+
+.grid-principal h2 {
+    margin-top: 0;
+    color: #173f6d;
+}
+
+.grid-cards {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 1rem;
+    box-shadow: 0 3px 8px #00000020;
+}
+
+.card h3 {
+    margin-top: #3178c6;
+}
+
+.card p{
+    line-height: 1.5;
+}
+
+.card a{
+    display: inline-block;
+    background-color: #3178c6;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #173f6d;
+}
+
+/* Rodapé */
+
+.rodape {
+    grid-area: footer;
+
+    background-color: #173f6d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
