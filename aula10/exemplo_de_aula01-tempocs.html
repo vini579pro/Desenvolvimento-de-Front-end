@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario e previsão do tempo</title>
+</head>
+<body>
+    <h1>Horario e Previsão do tempo</h1>
+
+    <p>
+        O programa mostrará uma saudação e uma recomendação do clima atual.
+    </p>
+
+    <script>
+        const dataHora = new Date();
+        const Hora = dataHora.getHours();
+
+        let previsaoTempo = prompt(
+            "Como está o dia hoje? Digite chuvoso ou ensolarado: "
+        );
+
+        previsaoTempo = previsaoTempo.toLowerCase().trim();
+
+        if(Hora < 12){
+            alert("Bom dia :)");
+            if (previsaoTempo === "chuvoso"){
+                alert("está chovendo, não esqueça o guarda-chuva");
+            } else if (previsaoTempo === "ensolarado") {
+                alert("está ensolarado, calor da bexiga!");
+            } else {
+                alert("por favor, Digite o clima no campo");
+            }
+
+
+
+        } else if (Hora < 18){
+            alert("Boa Tarde!");
+            if (previsaoTempo === "chuvoso"){
+                alert("está chovendo, não esqueça o guarda-chuva");
+            } else if (previsaoTempo === "ensolarado") {
+                alert("está ensolarado, calor da bexiga!");
+            } else {
+                alert("por favor, Digite o clima no campo");
+            }
+
+        } else {
+            alert("Boa noite, cumpade!");
+            if (previsaoTempo === "chuvoso"){
+                alert("está chovendo, não esqueça o guarda-chuva");
+            } else if (previsaoTempo === "ensolarado") {
+                alert("está ensolarado, calor da bexiga!");
+            } else {
+                alert("por favor, Digite o clima no campo");
+            }
+
+        }
+
+        
+    </script>
+</body>
+</html>
