@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+
+header {
+    margin-bottom: 30px;
+}
+
+nav {
+    margin: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+/* Vídeo */
+
+video {
+    max-width: 100%;
+}
+
+/* Conteúdo */
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Imagens */
+
+img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Texto */
+
+p {
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+/* Listas */
+
+ol,
+ul {
+    display: inline-block;
+    text-align: left;
+    margin: 10px auto;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Tabela */
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+/* Formulário */
+
+form {
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+}
+
+/* Botões */
+
+button {
+    padding: 8px 15px;
+    margin-right: 5px;
+}
+
+/* Rodapé */
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+}
